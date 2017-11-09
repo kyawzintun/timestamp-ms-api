@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
+const port = process.env.PORT || 5000;
 
 app.set('port', (process.env.PORT || 5000));
 app.use(cors());
@@ -14,6 +15,6 @@ app.get('/timestamp-ms', function (req, res){
   res.json(timestamp);
 });
 
-app.listen(process.env.PORT || 5000, function () {
-  console.log('Node app is running on port', process.env.PORT || 5000);
+app.listen(port, function () {
+  console.log('Node app is running on port', port);
 });
