@@ -5,15 +5,15 @@ const cors = require('cors')
 app.set('port', (process.env.PORT || 5000));
 app.use(cors());
 
-app.get('/', (req, res) => {
+app.get('/', function(req, res){
   res.send('api works');
 })
 
-app.get('/timestamp-ms', (req, res) => {
+app.get('/timestamp-ms', function (req, res){
   let timestamp = { "unix": 123, "natural": null };
   res.json(timestamp);
 });
 
-app.listen(app.get('port'), () => {
-  console.log('app is running on port ', app.get('port'));
-})
+app.listen(app.get('port'), function () {
+  console.log('Node app is running on port', app.get('port'));
+});
