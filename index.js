@@ -3,6 +3,10 @@ const app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+app.get('/', (req, res) => {
+  res.send('api works');
+})
+
 app.get('/timestamp-ms', (req, res) => {
   res.send('timestamp microservice api work');
 });
