@@ -18,5 +18,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.16.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyawzintun/timestamp-ms-api"
   }
 }
