@@ -1,0 +1,22 @@
+{
+  "name": "timestamp-microservice-api",
+  "version": "1.0.0",
+  "description": "FCC Timestamp Microservice API",
+  "engines": {
+    "node": "8.2.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "fcc",
+    "timestamp",
+    "ms"
+  ],
+  "author": "KZT",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.2"
+  }
+}
